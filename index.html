@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/like.png')">
+
+<div data-role="page" id="Principal" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Datos de la telefonia celular</h1>
+ </div>
+<div data-role="main" class="ui-content"> </div>
+  <div>
+     <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+        <li class="ui-first-child ui-last-child">
+        <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+          <h2>QUE ES UN TELEFONO CELULAR</h2>
+          <p> Se muestra uina breve informacion</p>
+        </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href ="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>HISTORIA DE LA TELEFONIA CELULAR</h2>
+        <p>Se muestra informacion relevante de lla historia de la telefonia celular</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>CLASIFICACION DE LA TELEFONIA CELULAR</h2>
+        <p>Se muestra la clasificacion</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>COMPAÑIAS QUE MANEJA LA TELEFONIA CELULAR EN MEXICO</h2>
+         <p>Muestra compañias telefonicas en Mexico</p>
+       </a>
+       </li>
+       <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>TELEFONOS CELULAR DEL FUTURO</h2>
+           <p>Muestra telefonos futuristas</p>
+       </a>
+       </li>
+      </ul>
+      
+</div>
+
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <div>
+    <img src="imagenes/logo.png" width="46" height="46">
+   </div>
+   <div>
+    <h4>Aplicacion DOS</h4>
+     <h4>Efren Ulises Molina Sevilla</h4>
+  </div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>QUE ES UN TELEFONO CELULAR</h1>
+   </div>
+    <div data-role="content" align="center">
+     <div>
+ Un teléfono móvil o celular es un teléfono portátil que puede hacer y recibir llamadas a través de una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico. El enlace de radiofrecuencia establece una conexión con los sistemas de conmutación de un operador de telefonía móvil, que proporciona acceso a la red telefónica pública conmutada (PSTN). La mayoría de los servicios de telefonía móvil modernos utilizan una arquitectura de red celular, y por lo tanto, los teléfonos móviles son con frecuencia también llamados Teléfonos celulares o Celulares. En adición a la telefonía, los teléfonos móviles de la era de los 2000 soportan una variedad de otros servicios, tales como mensajes de texto, MMS, correo electrónico, acceso a Internet, comunicaciones inalámbricas de corto alcance (infrarrojos, Bluetooth), aplicaciones de negocios, juegos de azar, y la fotografía digital. Los teléfonos móviles que ofrecen estos y más capacidades de computación se los conoce como teléfonos inteligentes.
+      
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>TELEFONOS CELULARES</h1>
+     <div>
+        <p>Esta es mi imagen de algunos telefonos celulares:<br>
+     </p>
+     </div>
+      <div><img src="imagenes/cel.png" width="41%" height="29%"></div>
+      </div>
+      
+El primer dispositivo de mano móvil fue presentado por John F. Mitchelly Martin Cooper de Motorola en 1973, usando un pesado teléfono de 4,4 libras (2 kg). En 1983, el DynaTAC 8000x fue el primer teléfono móvil de mano disponible comercialmente. Desde 1983 a 2014, las suscripciones de teléfonos móviles en todo el mundo crecieron a más de siete mil millones, habiendo más teléfonos móviles que personas en la tierra y llegando hasta el fondo de la pirámide económica. En 2016 los principales fabricantes de teléfonos móviles eran: Samsung, Apple y Huawei. 
+
+<div data-role="collapsible" data-content-theme="false">
+   <h1>USO</h1>
+     <div>
+        <p>USO CASUAL DE LOS TELEFONOS CELULARES:<br>
+     </p>
+     </div>
+      <div><img src="imagenes/per.png" width="28%" height="26%"></div>
+      </div>
+     </div>
+     </div>
+        <div data-role="footer" data-theme="a" data-position="fixed">
+        <h4>Aplicacion DOS,EUMS</h4>
+         </div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>HISTORIA DE LA TELEFONIA CELULAR</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<div data-role="collapsible" data-content-theme="false">
+   <h1>EVOLUCION:</h1>
+    
+      <div><img src="imagenes/histo.png" width="68%" height="37%"></div>
+      </div>
+<p>En las primeras etapas de la ingeniería de radio, se concibió un servicio de radio móvil de mano. En 1917, el inventor finlandés Eric Tigerstedt presentó una patente para un "Teléfono plegable de bolsillo con un micrófono de carbono muy delgado". Los primeros predecesores de los teléfonos celulares incluyen las comunicaciones de radio analógicas de barcos y trenes. La carrera para crear dispositivos telefónicos portátiles realmente comenzó después de la Segunda Guerra Mundial, con la evolución que tiene lugar en muchos países. 
+  El primer teléfono celular de mano fue presentado por Motorola en 1973. La primera red celular automatizada comercial fue lanzada en Japón por Nippon Telegraph and Telephone en 1979. Esto fue seguido en 1981 por el lanzamiento simultáneo del sistema de Telefonía Móvil Nórdica (NMT) en Dinamarca, Finlandia, Noruega y Suecia.
+  En 1991, la segunda generación (2G) de tecnología celular digital fue lanzada en Finlandia por Radiolinja en el estándar GSM. Esto provocó la competencia en el sector ya que los nuevos operadores desafiaron a los operadores de red 1G existentes.
+  Diez años más tarde, en 2001, la tercera generación (3G) fue lanzada en Japón por NTT DoCoMo en el estándar WCDMA. 
+  Para el año 2009, se hizo evidente que, en algún momento, las redes 3G se verían abrumadas por el crecimiento de las aplicaciones de banda ancha, tales como transmisión multimedia. Las dos primeras tecnologías disponibles en el mercado facturadas como 4G eran el estándar WiMAX, ofrecido en Norteamérica por Sprint, y el estándar LTE, quien se ofreció por primera vez en Escandinavia por TeliaSonera.
+<div data-role="collapsible" data-content-theme="false">
+   <h1>ANTES:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/ladri.jpg" width="53%" height="28%"></div>
+      </div>
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion DOS, EUMS</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>CLASIFICACION DE LA TELEFONIA CELULAR</h1>
+</div>
+<div data-role="content" align="top">
+<div> 
+<div data-role="collapsible" data-content-theme="false">
+   <h1>Celulares de baja gama:</h1>
+     <div>
+        <br>
+     </div>
+      <div><img src="imagenes/bg.jpg" width="43%" height="29%"></div>
+      </div>
+Bajo este nombre se identifican a aquellos teléfonos móviles que cuentan si bien cuentan con una cámara de fotos, esta es de baja calidad. Además de esto, incluyen un reproductor de música aunque de los más básicos, al igual que la memoria que presentan, que es bastante limitada. Los celulares de baja gama tampoco incluyen pantalla táctil y ésta suele ser de tamaño reducido. La conexión a Internet que ofrecen es bastante limitada y no cuentan con 3G.
+<div data-role="collapsible" data-content-theme="false">
+   <h1>Celulares de media gama:</h1>
+     <div>
+        <br>
+     </div>
+      <div><img src="imagenes/mg.png" width="52%" height="29%"></div>
+      </div>
+Estos celulares, en cambio, ofrecen pantallas un poco más grandes que los anteriores, por lo que su calidad es bastante mayor y resultan mucho más prácticas para los usuarios. Además de esto, la cámara de fotos que tienen es de mayor calidad, al igual que los reproductores de MP3. 
+<div data-role="collapsible" data-content-theme="false">
+   <h1>Celulares de alta gama:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/ag.png" width="48%" height="29%"></div>
+      </div>
+Los teléfonos móviles de alta gama ofrecen varias de las opciones antes mencionadas, pero con mejor calidad, como ocurre con la cámara de fotos o el reproductor de música. Además de esto, la conexión a Internet suele ser de mejor calidad y velocidad y ofrecen 3G. Además, cuentan con Bluetooth y como permiten conexión Wi Fi muchas veces no se venden con planes de Internet.
+<div data-role="collapsible" data-content-theme="false">
+   <h1>Smartphones o teléfonos inteligentes:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/4.png" width="75%" height="29%"></div>
+      </div>
+      Estos dispositivos son más completos y avanzados que los modelos anteriores. Entre otras cosas, la conexión a Internet es superior y sí ofrecen 3G. Además, la pantalla es de grandes dimensiones, excelente calidad y táctil. Por otro lado, estos teléfonos cuentas con reproductores de música muy avanzados, Bluetooth, cámara para grabar y sacar fotos, brújula digital y muchas otras aplicaciones y juegos que hacen del celular una excelente opción no sólo para mantenerse conectado con otros usuarios sino también como medio de entretenimiento y de información.</div>
+<div data-role="collapsible" data-content-theme="false">
+   <h1>De Primera generación:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/pg.gif" width="69%" height="29%"></div>
+    </div>
+Estos celulares son los que surgieron a principios de la década de los 70’s, y que funcionaban de forma analógica. Entre otras cosas, se caracterizan por ser de gran tamaño y peso, por lo que resultaban poco prácticos y transportables aunque de todas formas significaron un muy importante avance tecnológico dentro del mundo de las comunicaciones. Al ser analógicos, estos teléfonos únicamente permiten transmitir voz, ni siquiera un mensaje de texto.
+<div data-role="collapsible" data-content-theme="false">
+   <h1>De segunda generación:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/sg.gif" width="57%" height="29%"></div>
+    </div>
+Los teléfonos móviles de esta generación, que se ubica en la década de los 90’s, son los que comenzaron a ser digitales, dejando de lado las ondas de radio. Esto hizo que los teléfonos de 2 G mejoraran significativamente la calidad de las llamadas a realizar. 
+ <div data-role="collapsible" data-content-theme="false">
+   <h1>De tercera generación:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/tg.gif" width="64%" height="29%"></div>
+    </div>
+Bajo esta clasificación se identifica al tipo de celulares que presentaron por primera vez pantallas a color y LCD, lo que mejoró su calidad y estética de forma significativa. Sumado a esto, los celulares de esta generación ya ofrecen varios servicios, como la posibilidad de enviar mensajes de texto, cámara de fotos y videos.
+<div data-role="collapsible" data-content-theme="false">
+   <h1>De cuarta generación:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/cg.png" width="47%" height="29%"></div>
+    </div>
+Actualmente ya son muchos los que hablan de los celulares de una cuarta generación, que aún no ha llegado pero que, prevén, ofrecerá un ancho de banda aún mayor que el que existe actualmente. Esto, según los especialistas, permitirá a los usuarios recibir señales de televisión de alta definición, entre otros avances destacados. 
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/pg.jpg" alt="pg" title="pg" id="wows1_0"/></li>
+		<li><img src="data1/images/sg.jpg" alt="sg" title="sg" id="wows1_1"/></li>
+		<li><img src="data1/images/tg.jpg" alt="tg" title="tg" id="wows1_2"/></li>
+		<li><img src="data1/images/bg.jpg" alt="bg" title="bg" id="wows1_3"/></li>
+		<li><img src="data1/images/cel.png" alt="cel" title="cel" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/cg.png" alt="cssslider" title="cg" id="wows1_5"/></a></li>
+		<li><img src="data1/images/histo.png" alt="histo" title="histo" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="pg"><span><img src="data1/tooltips/pg.jpg" alt="pg"/>1</span></a>
+		<a href="#" title="sg"><span><img src="data1/tooltips/sg.jpg" alt="sg"/>2</span></a>
+		<a href="#" title="tg"><span><img src="data1/tooltips/tg.jpg" alt="tg"/>3</span></a>
+		<a href="#" title="bg"><span><img src="data1/tooltips/bg.jpg" alt="bg"/>4</span></a>
+		<a href="#" title="cel"><span><img src="data1/tooltips/cel.png" alt="cel"/>5</span></a>
+		<a href="#" title="cg"><span><img src="data1/tooltips/cg.png" alt="cg"/>6</span></a>
+		<a href="#" title="histo"><span><img src="data1/tooltips/histo.png" alt="histo"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wow slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion DOS,EUMS</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>COMPAÑIAS QUE MANEJA LA TELEFONIA CELULAR EN MEXICO</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<h2><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('1','','imagenes/like.png',1)"><img src="imagenes/mex.gif" alt="HOLO" width="303" height="138" id="1"></a></h2>
+
+<h2>Axtel</h2>
+<h2> Iusacell</h2>
+<h2> Movistar  </h2>
+<h2>Nextel  </h2>
+<h2>Telcel</h2>
+<h2> Unefon </h2>
+<h2>Virqin</h2>
+<h2>Flash</h2>
+<h2>WEEK</h2>
+<h2>tuenti</h2>
+<h2>Maz Tiempo</h2>
+<h2>Ciesrto</h2>
+<h2>AT&amp;T</h2>
+<H2><a href="https://www.forbes.com.mx/las-13-empresas-mexicanas-globales-mas-grandes/" target="_self">EMPRESAS GLOBALES MEXICANAS</a></H2>
+
+<div data-role="collapsible" data-content-theme="false">
+   <h1>Compañias:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/companias.png" width="69%" height="31%"></div>
+      </div>
+
+</div>
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion DOS, EUMS</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a" >
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>TELEFONOS CELULAR DEL FUTURO</h1>
+</div>
+<div data-role="content" align="top">
+<div>
+<div data-role="collapsible" data-content-theme="false">
+   <h1>PANTALLAS FLEXIBLES:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/flexible.jpg" width="37%" height="19%"></div>
+      </div>
+<p>Fabricantes como LG y Samsung han estado coqueteando con la idea desde hace ya un tiempo. Conforme las pantallas se hacen más y más grandes, vemos que hay un límite en el tamaño en el que es cómodo manejar un smartphone, especialmente.  </p>
+<p>Por el momento podríamos soñar con smartphones cilíndricos cuya pantalla pudiera desplegarse como un rollo en caso de necesitarlo. Además, podríamos ver un nuevo auge de los llamados ‘flip phones’ o ‘clamshell’, esta vez con pantalla en todo su interior. </p>
+<h2>Nuevas formas de autenticación</h2>
+<p>Códigos PIN, contraseñas, patrones de desbloqueo, sensores de huellas abajo, detrás o al lado. Estos son los métodos más comunes para autenticarnos en nuestro equipo. Sin embargo, compañías como Qualcomm están desarrollando nuevos sensores de huellas integrados en la pantalla del equipo, basados en el sonar. Así, por medio de ultrasonido sería posible identificar la superficie de cada dedo en particular.  </p>
+<p>Adicionalmente, otras compañías como Fujitsu están desarrollando tecnología de reconocimiento de iris no invasiva, y así ya tenemos un equipo con cámaras capaces de diferenciar el ojo del usuario. Microsoft también presentó una solución similar en sus recientes equipos Lumia 950 y Lumia 950 XL. </p>
+
+<div data-role="collapsible" data-content-theme="false">
+   <h1>BATERIAS MAS DURADERAS:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/bateria.jpg" width="51%" height="18%"></div>
+      </div>
+      
+Pareciera que los usuarios nos rendimos ante la duración de la batería de los actuales smartphones. Que estos tengan una autonomía de batería de más de un día suele sorprendernos gratamente. En el futuro, se espera que tengamos mejores duraciones de batería en nuestros smartphones, sin un compromiso grande en el peso o la dimensión de los dispositivos.
+Por ejemplo, hay avances en las baterías de iones de aluminio, aunque todavía estas baterías están en una fase inicial. Por otro lado, también hay investigaciones en cómo aumentar el nivel de litio sin que la batería llegue a ser peligrosa, gracias a materiales como el Kevlar.
+
+<div data-role="collapsible" data-content-theme="false">
+   <h1>SENSORES 3D:</h1>
+     <div>
+     </div>
+      <div><img src="imagenes/3d.jpg" width="25%" height="21%"></div>
+      </div>
+      
+<p>Project Tango es uno de los proyectos alternativos de Google. Por el momento consiste en una tableta que tiene varias cámaras que le permiten analizar y entender su entorno. Esta tecnología, que por el momento no se encuentra disponible para los consumidores, podría ser el futuro de la realidad aumentada en los móviles. Además, esto permitiría a personas con discapacidad visual moverse por un espacio que no conoce, mediante comandos de voz. </p>
+<p> Por otro lado, en el más reciente Google I/O, la compañía nos presentó su proyecto Soli, que por medio de un pequeño sonar, se podrá interactuar con los dispositivos sin tocarlos. </p>
+<h2>Nuevos materiales</h2>
+El grafeno parece ser el próximo material a utilizar en el ámbito de la electrónica de consumo. Desde la fabricación de baterías, que permiten una carga más rápida y mayor concentración de energía por kilogramo, hasta pantallas más resistentes, flexibles y prácticamente irrompibles. Por otro lado, el costo de hacer un equipo con este material sería en teoría menor que el costo actual, lo que haría que la tecnología de punta fuera mas accesible para todos los públicos y la viéramos en los celulares del futuro.
+
+</div>
+
+</div>
+<div data-role="footer" data-theme="a" data-position="fixed">
+<h4>Aplicacion DOS,EUMS</h4>
+</div>
+</div>
+</body>
+</html>
